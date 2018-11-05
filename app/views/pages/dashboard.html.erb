@@ -1,0 +1,18 @@
+<div class="row">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Usuario</th>
+        <th>Role</th>
+      </tr>
+    </thead>
+  <% @usuarios.each do |usuario| %>
+      <tbody>
+        <tr>
+          <td><%= usuario.email %></td>
+          <td><%= usuario.role %></td>
+        </tr>
+      </tbody>
+  <% end %>
+</table>
+</div>
